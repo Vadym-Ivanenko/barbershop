@@ -5,40 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="" class="header-logo">
-          <svg>
-            <use></use>
-          </svg>
-        </a>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services and prices</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-        <li><a href="#">Online-booking</a></li>
-      </ul>
+      <div class="container head-container">
+        <div class="header-wrap">
+          <nav class="header-nav">
+            <a href="#" class="header-logo">
+              <svg class="header-logo-icon" width="69" height="55">
+                <use href="./images/symbol-defs.svg#icon-logo-icon"></use>
+              </svg>
+            </a>
+            <ul class="nav-list list">
+              <li>
+                <a href="#" class="nav-link link">About</a>
+              </li>
+              <li><a href="#" class="nav-link link">Services and prices</a></li>
+              <li><a href="#" class="nav-link link">Barbers</a></li>
+              <li><a href="#" class="nav-link link">Contacts</a></li>
+            </ul>
+          </nav>
+          <ul class="header-list list">
+            <li>
+              <a href="tel:+380441111111" class="header-link link"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <button class="header-btn btn" type="button">
+                Online-booking
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
+        <div class="container hero-container">
+          <p>A hair salon for men in Kyiv</p>
+          <h1>BarberShop</h1>
+          <p>
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+        </div>
       </section>
       <section class="shop">
         <ul class="shop-img-item">
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
+          <li>
+            <img src="./images/1_benefits.jpg" alt="man cut bear" width="270" />
+          </li>
+          <li>
+            <img src="./images/2_benefits.jpg" alt="man cut hear" width="270" />
+          </li>
         </ul>
         <p>About</p>
         <h2>Best Barbershop in your city</h2>
@@ -127,36 +155,90 @@
         <h2>Our barbers</h2>
         <ul>
           <li>
-            <img src="#" alt="" />
+            <img src="./images/1-barbers.jpg" alt="man cut hair" width="370" />
             <h3>John Smith</h3>
             <p>Extreme Barber</p>
             <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li>
+                <svg width="20" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram-icon"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-icon"></use>
+                </svg>
+              </li>
             </ul>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src="./images/2-barbers.jpg" alt="man cut hair" />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li>
+                <svg width="20" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram-icon"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-icon"></use>
+                </svg>
+              </li>
             </ul>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src="./images/3-barbers.jpg" alt="man cut hair" />
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li>
+                <svg width="20" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram-icon"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-icon"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-icon"></use>
+                </svg>
+              </li>
             </ul>
           </li>
         </ul>
@@ -165,10 +247,10 @@
         <p>In Latin, "barba" means "beard"</p>
         <h2>Gallery</h2>
         <ul>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
+          <li><img src="./images/1-midle.jpg" alt="man cut hear" /></li>
+          <li><img src="./images/2-midle.jpg" alt="man cut hear" /></li>
+          <li><img src="./images/3-midle.jpg" alt="man cut hear" /></li>
+          <li><img src="./images/4-midle.jpg" alt="man cut hear" /></li>
         </ul>
       </section>
       <section class="pre-footer">
@@ -177,10 +259,31 @@
         <h2>Contacts</h2>
         <address>
           <ul>
-            <li><a href="">st. Vasilkivska, 7A Kyiv, 08132</a></li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
             <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              <a href="">
+                <svg width="24" height="24">
+                  <use
+                    href="./images/symbol-defs.svg#icon-localisation-icon"
+                  ></use>
+                </svg>
+                st. Vasilkivska, 7A Kyiv, 08132</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380441111111">
+                <svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-phone-icon"></use>
+                </svg>
+                +38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:barbershop@email.com">
+                <svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-mail-icon"></use>
+                </svg>
+                barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
