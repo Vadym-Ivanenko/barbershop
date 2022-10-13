@@ -11,6 +11,7 @@
     --accent-color: #FF6C00;
     --third-color: #555555;
     --fourth-color: #9DA4BD;
+    --second-font: 'Raleway';
 }
 
 h1,
@@ -37,6 +38,7 @@ img {
 
 .container {
     width: 1170px;
+    margin: 0 auto;
 }
 
 .list {
@@ -53,16 +55,42 @@ img {
     color: var(--accent-color);
 }
 
+.subtitle {
+    position: relative;
+    display: inline-block;
+    padding-left: 80px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.subtitle::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 60px;
+    height: 1px;
+}
+
+.descr {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+}
+
 
 /* -----------Header--------------- */
-header {
-    padding-top: 32px;
-}
 
 .head-container {
     display: fixed;
-    margin: 0 auto;
-    /* position: absolute; */
+    position: absolute;
+
 }
 
 .header-wrap {
@@ -142,8 +170,43 @@ header {
 /* -----------------Hero------------------- */
 
 .hero-container {
-    margin: 0 auto;
+    position: relative;
     background: url(../images/hero-bcg.jpg), rgba(25, 28, 38, 0.2);
-    min-width: 1070px;
+    width: 1070px;
+    min-height: 680px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
+.hero-wrap {
+    position: absolute;
+    top: 42%;
+    left: 9%;
+}
+
+.hero-subtitle {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-subtitle::before {
+    background: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    margin-top: 20px;
+
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+
+    color: var(--second-color);
+}
+
+.hero-descr {
+    margin-top: 20px;
+    max-width: 360px;
+
+    color: var(--fourth-color);
 }
